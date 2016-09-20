@@ -3,14 +3,14 @@ using namespace std;
 
 int main() {
 	
-	// itnitialize the variables length and width
+	// declare the legth and width variable and assign the values
 	int length = 16;
 	int width = 18;
 
 	// declare the output in perimeter variable
 	int perimeter;
 
-	//assignment expression
+	//intitialize in perimeter variable
 	perimeter = 2 * (length + width);
 
 	cout << " The perimeter is  " << perimeter << endl;
