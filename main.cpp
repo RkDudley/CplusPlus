@@ -1,78 +1,70 @@
 //
 //  main.cpp
-//  inheritance
+//  inherritance project
 //
-//  Created by Rattikarn Dudley on 8/22/17.
+//  Created by Rattikarn Dudley on 8/24/17.
 //  Copyright © 2017 Rattikarn Dudley. All rights reserved.
 //
 
 #include <iostream>
-#include <cmath>
-using namespace std;
-
-const double PI = 2.0 * asin(1.0);
 
 //class declaration section
-class Circle
+class Rectangle
 {
 protected:
-    double radius;
+    double length;
+    double width;
 public:
-    Circle(double = 1.0); // constructor
-    double calcval();
+    Rectangle(double = 1.0, double = 1.0);
+    double area();
 };
+// class implementation for rectriangle
+Rectangle::Rectangle(double ll, double ww)
+{
+    length = ll;
+    width = ww;
+}
+double Rectangle::area()
+{
+    return length * width;
+}
 
-//class implementation section for circle
-Circle::Circle(double r) // constructor
-{
-    radius = r;
-}
-// calculate the area of a Circle
-double Circle::calcval()
-{
-    return (PI * radius * radius);
-}
-// class declaration section where Cylinder is derived from circle
-class Cylinder : public Circle
+//class declaration section where box is derived from rectangle class
+class Box: public Rectangle
 {
 protected:
-    double length; // add one data member
+    double depth;
 public:
-    Cylinder(double r = 1.0, double l = 1.0): Circle(r), length(l){}
-    double calcval();
-};
-//class implemetation section for Cylinder
-double Cylinder::calcval()
-{
-    return (length * Circle::calcval()); // note the base function call
-}
-// class implementation section where Sphere from base Circle class
-class Sphere: public Circle
-{
-public:
-    Sphere(double r = 1.0): Circle(r){}; // constructor
-    double calcval();
+    //use a base/member initialization list that call Rectangle constructor
+    Box(double d =1.0, double r = 1.0): Rectangle(r), depth(d){};
+    double volume();
+    double area();
 };
 
-// class implementation
-double Sphere::calcval()
+//class implementation for rectriangle
+double Box:: volume()
 {
-    return radius * (4/3) * Circle::calcval();
+    return depth * Rectangle::area();
+}
+double Box::area()
+{
+    return (2 * Rectangle::area()) + (2 * (depth * length)) + (2 * (depth * width));
 }
 
-int main()
-{
-    Circle circle_1, circle_2(2);
-    Cylinder cyl_1(3,4);
-    Sphere sp_1(7);
+int main() {
     
-    cout << "circle 1 is " << circle_1.calcval() << endl;
-    cout << "circle 2 is " << circle_2.calcval() << endl;
-    cout << "Cylinder 1 is " << cyl_1.calcval() << endl;
-    cout << "Sphere 1 is " << sp_1.calcval() << endl;
+    Rectangle a_1, a_2(3,5);
+    Box b_1, b_2(6,7);
     
-    circle_1 = cyl_1;
-    cout << "Cylider 1 is " << circle_1.calcval() << endl;
+    std::cout << "The area of Rec a 1 is " << a_1.area() << std::endl;
+    std::cout << "The area of Rec a 2 is " << a_2.area() << std::endl;
+    std::cout << "The area of Box b 1 is " << b_1.area() << std::endl;
+    std::cout << "The area of Box b 2 is " << b_2.area() << std::endl;
+    
+    a_1 = b_2;
+    
+    std::cout << "The area of Rec a 1 is " << a_1.area() << std::endl;
+    
     
     return 0;
 }
