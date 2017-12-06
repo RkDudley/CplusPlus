@@ -1,0 +1,5 @@
+123|Little Boy|Felipe Junior|Home Place|Family|45.00|100
+9780399565038|The Rooster Bar|Grisham, John|Random House|Fiction|25.70|5
+9780735224292|Little Fires Everywhere|Ng, Celeste|Penguin Group USA|Fiction|16.20|3
+9781614489719|Stop the Rain Dance|e Stagl, John F., Dr|Ingram Pub Services |Romance|14.27|20
+9999123456789|A++ Data Structure|D.S. MALIK|Course Technology|Computer Science|42.42|50
