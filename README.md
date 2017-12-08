@@ -1,5 +1,4 @@
-# CplusPlus
-C++ Projects
+- Book Store Stimulatate Book Store Management. 
 
 The projects of a book store demonstrate how to use data structure of list, queue and stack. I teamed up with 3 of my class mate 
 to create this project. It is a first project that we have to build from a ground. I was really excited to create this project
@@ -20,9 +19,14 @@ The first image is showing a main menu which my friend created, to go to my func
 It displays an option to manage membership at a book store which is consisted of add,delete,edit, search and display option.
 ![image](https://user-images.githubusercontent.com/17953008/33735909-c07c35e2-db5e-11e7-93a1-4ccb4e1217eb.png)
 
-The first procedure that I approched is creating an UML. UML is an object oriented diagram using to picuture which member object and method will be used in a project. 
+- Milk Shelf Stimuate date check before putting milk in queue shelf
 
-![image](https://user-images.githubusercontent.com/17953008/33736115-72c708b2-db5f-11e7-8ef2-004887f28b19.png)
-![image](https://user-images.githubusercontent.com/17953008/33736155-8f70e2c6-db5f-11e7-86dd-d368795a773a.png)
+-Using Queue to store a milk list
+-Sort milk by old date to new date
 
-The CustomerType class is an operation. 
+![image](https://user-images.githubusercontent.com/17953008/33781225-bc25ca30-dc21-11e7-9959-9a647e06acaa.png)
+
+1. User input to store milk data; vender, price and date
+2. Display milk sort by old date to new date
+
+![image](https://user-images.githubusercontent.com/17953008/33781411-88c795d2-dc22-11e7-91c1-89092cc41f6f.png)
