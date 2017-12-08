@@ -19,6 +19,8 @@ The first image is showing a main menu which my friend created, to go to my func
 It displays an option to manage membership at a book store which is consisted of add,delete,edit, search and display option.
 ![image](https://user-images.githubusercontent.com/17953008/33735909-c07c35e2-db5e-11e7-93a1-4ccb4e1217eb.png)
 
+link to implementation part >> https://github.com/momokojung01/CplusPlus/tree/master/BookStore
+
 - Milk Shelf Stimuate date check before putting milk in queue shelf
 
 -Using Queue to store a milk list
@@ -30,3 +32,4 @@ It displays an option to manage membership at a book store which is consisted of
 2. Display milk sort by old date to new date
 
 ![image](https://user-images.githubusercontent.com/17953008/33781411-88c795d2-dc22-11e7-91c1-89092cc41f6f.png)
+link to implementation part >> https://github.com/momokojung01/CplusPlus/tree/master/MilkShelf/exam_4
