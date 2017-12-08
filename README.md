@@ -11,11 +11,11 @@ of requirement which consisted of
 4. Compile and readable 
 
 My part is customer classes. I decided to define a link list implementation becuase the customer can grow, link list is a best option to
-implement those 2 classes.
+implement those 2 classe. customerType (opration) and customerList(link list implementation) 
 
 ![image](https://user-images.githubusercontent.com/17953008/33735716-1eab8fec-db5e-11e7-828e-c79c85a5e659.png)
 
-The first image is showing a main menu which my friend created, to go to my function that I implemeneted press No 3 client information.
+Theimage is showing a main menu which my friend created, to go to my function that I implemeneted press No 3 client information.
 It displays an option to manage membership at a book store which is consisted of add,delete,edit, search and display option.
 ![image](https://user-images.githubusercontent.com/17953008/33735909-c07c35e2-db5e-11e7-93a1-4ccb4e1217eb.png)
 
